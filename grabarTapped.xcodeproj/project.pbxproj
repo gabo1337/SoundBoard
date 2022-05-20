@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D84C0E0C283836B5002C8CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84C0E0B283836B5002C8CDB /* AppDelegate.swift */; };
+		D84C0E0E283836B5002C8CDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84C0E0D283836B5002C8CDB /* SceneDelegate.swift */; };
+		D84C0E10283836B5002C8CDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84C0E0F283836B5002C8CDB /* ViewController.swift */; };
+		D84C0E13283836B5002C8CDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84C0E11283836B5002C8CDB /* Main.storyboard */; };
+		D84C0E16283836B5002C8CDB /* grabarTapped.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D84C0E14283836B5002C8CDB /* grabarTapped.xcdatamodeld */; };
+		D84C0E18283836B9002C8CDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84C0E17283836B9002C8CDB /* Assets.xcassets */; };
+		D84C0E1B283836B9002C8CDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84C0E19283836B9002C8CDB /* LaunchScreen.storyboard */; };
+		D84C0E26283836B9002C8CDB /* grabarTappedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84C0E25283836B9002C8CDB /* grabarTappedTests.swift */; };
+		D84C0E30283836BA002C8CDB /* grabarTappedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84C0E2F283836BA002C8CDB /* grabarTappedUITests.swift */; };
+		D84C0E32283836BA002C8CDB /* grabarTappedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84C0E31283836BA002C8CDB /* grabarTappedUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D84C0E22283836B9002C8CDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D84C0E00283836B5002C8CDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D84C0E07283836B5002C8CDB;
+			remoteInfo = grabarTapped;
+		};
+		D84C0E2C283836BA002C8CDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D84C0E00283836B5002C8CDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D84C0E07283836B5002C8CDB;
+			remoteInfo = grabarTapped;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D84C0E08283836B5002C8CDB /* grabarTapped.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grabarTapped.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84C0E0B283836B5002C8CDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D84C0E0D283836B5002C8CDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D84C0E0F283836B5002C8CDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D84C0E12283836B5002C8CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D84C0E15283836B5002C8CDB /* grabarTapped.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = grabarTapped.xcdatamodel; sourceTree = "<group>"; };
+		D84C0E17283836B9002C8CDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D84C0E1A283836B9002C8CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D84C0E1C283836B9002C8CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84C0E21283836B9002C8CDB /* grabarTappedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grabarTappedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84C0E25283836B9002C8CDB /* grabarTappedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grabarTappedTests.swift; sourceTree = "<group>"; };
+		D84C0E2B283836BA002C8CDB /* grabarTappedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grabarTappedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84C0E2F283836BA002C8CDB /* grabarTappedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grabarTappedUITests.swift; sourceTree = "<group>"; };
+		D84C0E31283836BA002C8CDB /* grabarTappedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grabarTappedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D84C0E05283836B5002C8CDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84C0E1E283836B9002C8CDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84C0E28283836BA002C8CDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D84C0DFF283836B5002C8CDB = {
+			isa = PBXGroup;
+			children = (
+				D84C0E0A283836B5002C8CDB /* grabarTapped */,
+				D84C0E24283836B9002C8CDB /* grabarTappedTests */,
+				D84C0E2E283836BA002C8CDB /* grabarTappedUITests */,
+				D84C0E09283836B5002C8CDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D84C0E09283836B5002C8CDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D84C0E08283836B5002C8CDB /* grabarTapped.app */,
+				D84C0E21283836B9002C8CDB /* grabarTappedTests.xctest */,
+				D84C0E2B283836BA002C8CDB /* grabarTappedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D84C0E0A283836B5002C8CDB /* grabarTapped */ = {
+			isa = PBXGroup;
+			children = (
+				D84C0E0B283836B5002C8CDB /* AppDelegate.swift */,
+				D84C0E0D283836B5002C8CDB /* SceneDelegate.swift */,
+				D84C0E0F283836B5002C8CDB /* ViewController.swift */,
+				D84C0E11283836B5002C8CDB /* Main.storyboard */,
+				D84C0E17283836B9002C8CDB /* Assets.xcassets */,
+				D84C0E19283836B9002C8CDB /* LaunchScreen.storyboard */,
+				D84C0E1C283836B9002C8CDB /* Info.plist */,
+				D84C0E14283836B5002C8CDB /* grabarTapped.xcdatamodeld */,
+			);
+			path = grabarTapped;
+			sourceTree = "<group>";
+		};
+		D84C0E24283836B9002C8CDB /* grabarTappedTests */ = {
+			isa = PBXGroup;
+			children = (
+				D84C0E25283836B9002C8CDB /* grabarTappedTests.swift */,
+			);
+			path = grabarTappedTests;
+			sourceTree = "<group>";
+		};
+		D84C0E2E283836BA002C8CDB /* grabarTappedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D84C0E2F283836BA002C8CDB /* grabarTappedUITests.swift */,
+				D84C0E31283836BA002C8CDB /* grabarTappedUITestsLaunchTests.swift */,
+			);
+			path = grabarTappedUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D84C0E07283836B5002C8CDB /* grabarTapped */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D84C0E35283836BA002C8CDB /* Build configuration list for PBXNativeTarget "grabarTapped" */;
+			buildPhases = (
+				D84C0E04283836B5002C8CDB /* Sources */,
+				D84C0E05283836B5002C8CDB /* Frameworks */,
+				D84C0E06283836B5002C8CDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = grabarTapped;
+			productName = grabarTapped;
+			productReference = D84C0E08283836B5002C8CDB /* grabarTapped.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D84C0E20283836B9002C8CDB /* grabarTappedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D84C0E38283836BA002C8CDB /* Build configuration list for PBXNativeTarget "grabarTappedTests" */;
+			buildPhases = (
+				D84C0E1D283836B9002C8CDB /* Sources */,
+				D84C0E1E283836B9002C8CDB /* Frameworks */,
+				D84C0E1F283836B9002C8CDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D84C0E23283836B9002C8CDB /* PBXTargetDependency */,
+			);
+			name = grabarTappedTests;
+			productName = grabarTappedTests;
+			productReference = D84C0E21283836B9002C8CDB /* grabarTappedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D84C0E2A283836BA002C8CDB /* grabarTappedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D84C0E3B283836BA002C8CDB /* Build configuration list for PBXNativeTarget "grabarTappedUITests" */;
+			buildPhases = (
+				D84C0E27283836BA002C8CDB /* Sources */,
+				D84C0E28283836BA002C8CDB /* Frameworks */,
+				D84C0E29283836BA002C8CDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D84C0E2D283836BA002C8CDB /* PBXTargetDependency */,
+			);
+			name = grabarTappedUITests;
+			productName = grabarTappedUITests;
+			productReference = D84C0E2B283836BA002C8CDB /* grabarTappedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D84C0E00283836B5002C8CDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					D84C0E07283836B5002C8CDB = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					D84C0E20283836B9002C8CDB = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = D84C0E07283836B5002C8CDB;
+					};
+					D84C0E2A283836BA002C8CDB = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = D84C0E07283836B5002C8CDB;
+					};
+				};
+			};
+			buildConfigurationList = D84C0E03283836B5002C8CDB /* Build configuration list for PBXProject "grabarTapped" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D84C0DFF283836B5002C8CDB;
+			productRefGroup = D84C0E09283836B5002C8CDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D84C0E07283836B5002C8CDB /* grabarTapped */,
+				D84C0E20283836B9002C8CDB /* grabarTappedTests */,
+				D84C0E2A283836BA002C8CDB /* grabarTappedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D84C0E06283836B5002C8CDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84C0E1B283836B9002C8CDB /* LaunchScreen.storyboard in Resources */,
+				D84C0E18283836B9002C8CDB /* Assets.xcassets in Resources */,
+				D84C0E13283836B5002C8CDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84C0E1F283836B9002C8CDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84C0E29283836BA002C8CDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D84C0E04283836B5002C8CDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84C0E10283836B5002C8CDB /* ViewController.swift in Sources */,
+				D84C0E0C283836B5002C8CDB /* AppDelegate.swift in Sources */,
+				D84C0E16283836B5002C8CDB /* grabarTapped.xcdatamodeld in Sources */,
+				D84C0E0E283836B5002C8CDB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84C0E1D283836B9002C8CDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84C0E26283836B9002C8CDB /* grabarTappedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84C0E27283836BA002C8CDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84C0E30283836BA002C8CDB /* grabarTappedUITests.swift in Sources */,
+				D84C0E32283836BA002C8CDB /* grabarTappedUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D84C0E23283836B9002C8CDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D84C0E07283836B5002C8CDB /* grabarTapped */;
+			targetProxy = D84C0E22283836B9002C8CDB /* PBXContainerItemProxy */;
+		};
+		D84C0E2D283836BA002C8CDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D84C0E07283836B5002C8CDB /* grabarTapped */;
+			targetProxy = D84C0E2C283836BA002C8CDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D84C0E11283836B5002C8CDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D84C0E12283836B5002C8CDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D84C0E19283836B9002C8CDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D84C0E1A283836B9002C8CDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D84C0E33283836BA002C8CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D84C0E34283836BA002C8CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D84C0E36283836BA002C8CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = grabarTapped/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miempresa.grabarTapped;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D84C0E37283836BA002C8CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = grabarTapped/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miempresa.grabarTapped;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D84C0E39283836BA002C8CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miempresa.grabarTappedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grabarTapped.app/grabarTapped";
+			};
+			name = Debug;
+		};
+		D84C0E3A283836BA002C8CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miempresa.grabarTappedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grabarTapped.app/grabarTapped";
+			};
+			name = Release;
+		};
+		D84C0E3C283836BA002C8CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miempresa.grabarTappedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = grabarTapped;
+			};
+			name = Debug;
+		};
+		D84C0E3D283836BA002C8CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miempresa.grabarTappedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = grabarTapped;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D84C0E03283836B5002C8CDB /* Build configuration list for PBXProject "grabarTapped" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84C0E33283836BA002C8CDB /* Debug */,
+				D84C0E34283836BA002C8CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D84C0E35283836BA002C8CDB /* Build configuration list for PBXNativeTarget "grabarTapped" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84C0E36283836BA002C8CDB /* Debug */,
+				D84C0E37283836BA002C8CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D84C0E38283836BA002C8CDB /* Build configuration list for PBXNativeTarget "grabarTappedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84C0E39283836BA002C8CDB /* Debug */,
+				D84C0E3A283836BA002C8CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D84C0E3B283836BA002C8CDB /* Build configuration list for PBXNativeTarget "grabarTappedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84C0E3C283836BA002C8CDB /* Debug */,
+				D84C0E3D283836BA002C8CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D84C0E14283836B5002C8CDB /* grabarTapped.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D84C0E15283836B5002C8CDB /* grabarTapped.xcdatamodel */,
+			);
+			currentVersion = D84C0E15283836B5002C8CDB /* grabarTapped.xcdatamodel */;
+			path = grabarTapped.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D84C0E00283836B5002C8CDB /* Project object */;
+}

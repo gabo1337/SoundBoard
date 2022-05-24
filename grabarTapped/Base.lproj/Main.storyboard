@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YLx-51-PlT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,34 +8,161 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--GRABACIONES-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="grabarTapped" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="grabarTapped" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgC-KN-T3A">
-                                <rect key="frame" x="186" y="345" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aUJ-sZ-cBa">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aUJ-sZ-cBa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Eeq-Sx-Z63"/>
+                            <constraint firstItem="aUJ-sZ-cBa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZUf-a6-Yqz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aUJ-sZ-cBa" secondAttribute="trailing" id="bAy-1q-tO6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aUJ-sZ-cBa" secondAttribute="bottom" id="tUl-yf-Ub9"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="GRABACIONES" id="j7Q-es-6uA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="WGA-qL-ffq">
+                            <connections>
+                                <segue destination="tNT-Ne-Vfc" kind="show" id="V46-Yq-4HE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tablaGrabaciones" destination="aUJ-sZ-cBa" id="VTu-YB-VaO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23" y="68"/>
+            <point key="canvasLocation" x="886.95652173913049" y="67.633928571428569"/>
+        </scene>
+        <!--Sound View Controller-->
+        <scene sceneID="SwF-rM-UUd">
+            <objects>
+                <viewController id="tNT-Ne-Vfc" customClass="SoundViewController" customModule="grabarTapped" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hge-8e-sWu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2y-ZE-PpE">
+                                <rect key="frame" x="167" y="108" width="80" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GRABAR" titleAlignment="center">
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="grabarTapped:" destination="tNT-Ne-Vfc" eventType="touchUpInside" id="7jt-1q-RBZ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="microfono" translatesAutoresizingMaskIntoConstraints="NO" id="cVo-Vu-aMG">
+                                <rect key="frame" x="115" y="97" width="50" height="52"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkJ-RY-Hk8">
+                                <rect key="frame" x="150" y="198" width="114" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="REPRODUCIR"/>
+                                <connections>
+                                    <action selector="reproducirTapped:" destination="tNT-Ne-Vfc" eventType="touchUpInside" id="j74-tF-78S"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="music" translatesAutoresizingMaskIntoConstraints="NO" id="wF7-7o-BE5">
+                                <rect key="frame" x="100" y="188" width="51" height="51"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOMBRE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qM-fB-o8O">
+                                <rect key="frame" x="20" y="262" width="374" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de Audio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uXf-XN-DMP">
+                                <rect key="frame" x="20" y="303" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4S-Yz-WM2">
+                                <rect key="frame" x="164" y="357" width="89" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="AGREGAR"/>
+                                <connections>
+                                    <action selector="agregarTapped:" destination="tNT-Ne-Vfc" eventType="touchUpInside" id="xFJ-gg-Zxw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rGE-cn-gZM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HkJ-RY-Hk8" firstAttribute="centerX" secondItem="8qM-fB-o8O" secondAttribute="centerX" id="2Rj-XV-nDn"/>
+                            <constraint firstItem="P4S-Yz-WM2" firstAttribute="top" secondItem="uXf-XN-DMP" secondAttribute="bottom" constant="20" id="7tr-Xz-rKg"/>
+                            <constraint firstItem="rGE-cn-gZM" firstAttribute="trailing" secondItem="8qM-fB-o8O" secondAttribute="trailing" constant="20" id="F7L-CZ-ZWp"/>
+                            <constraint firstItem="g2y-ZE-PpE" firstAttribute="centerY" secondItem="Hge-8e-sWu" secondAttribute="centerY" constant="-324.5" id="GNn-x1-B0u"/>
+                            <constraint firstItem="HkJ-RY-Hk8" firstAttribute="centerY" secondItem="wF7-7o-BE5" secondAttribute="centerY" id="HfC-GA-Y9z"/>
+                            <constraint firstItem="HkJ-RY-Hk8" firstAttribute="centerX" secondItem="g2y-ZE-PpE" secondAttribute="centerX" id="MeL-CX-KS1"/>
+                            <constraint firstItem="cVo-Vu-aMG" firstAttribute="centerY" secondItem="g2y-ZE-PpE" secondAttribute="centerY" id="NRJ-tl-Xro"/>
+                            <constraint firstItem="uXf-XN-DMP" firstAttribute="top" secondItem="8qM-fB-o8O" secondAttribute="bottom" constant="20" id="Ovg-sJ-SYa"/>
+                            <constraint firstItem="HkJ-RY-Hk8" firstAttribute="top" secondItem="cVo-Vu-aMG" secondAttribute="bottom" constant="49" id="Rmp-jW-sd0"/>
+                            <constraint firstItem="wF7-7o-BE5" firstAttribute="top" secondItem="cVo-Vu-aMG" secondAttribute="bottom" constant="39" id="UHV-pW-FfO"/>
+                            <constraint firstItem="rGE-cn-gZM" firstAttribute="trailing" secondItem="HkJ-RY-Hk8" secondAttribute="trailing" constant="150" id="V2v-VN-vYL"/>
+                            <constraint firstItem="HkJ-RY-Hk8" firstAttribute="top" secondItem="g2y-ZE-PpE" secondAttribute="bottom" constant="59" id="Zo6-fc-fse"/>
+                            <constraint firstItem="8qM-fB-o8O" firstAttribute="leading" secondItem="rGE-cn-gZM" secondAttribute="leading" constant="20" id="bGs-Bn-hOM"/>
+                            <constraint firstItem="g2y-ZE-PpE" firstAttribute="top" secondItem="rGE-cn-gZM" secondAttribute="top" constant="20" id="cUW-mr-MOt"/>
+                            <constraint firstItem="8qM-fB-o8O" firstAttribute="top" secondItem="HkJ-RY-Hk8" secondAttribute="bottom" constant="20" id="dKM-dz-4we"/>
+                            <constraint firstItem="rGE-cn-gZM" firstAttribute="trailing" secondItem="uXf-XN-DMP" secondAttribute="trailing" constant="20" id="eWr-vq-Ye4"/>
+                            <constraint firstItem="g2y-ZE-PpE" firstAttribute="leading" secondItem="cVo-Vu-aMG" secondAttribute="trailing" constant="2" id="egW-bK-EhO"/>
+                            <constraint firstItem="cVo-Vu-aMG" firstAttribute="leading" secondItem="rGE-cn-gZM" secondAttribute="leading" constant="115" id="gSJ-bj-SPt"/>
+                            <constraint firstItem="HkJ-RY-Hk8" firstAttribute="leading" secondItem="wF7-7o-BE5" secondAttribute="trailing" id="hfy-PF-ovv"/>
+                            <constraint firstItem="uXf-XN-DMP" firstAttribute="leading" secondItem="rGE-cn-gZM" secondAttribute="leading" constant="20" id="sj5-t6-epU"/>
+                            <constraint firstItem="g2y-ZE-PpE" firstAttribute="centerX" secondItem="Hge-8e-sWu" secondAttribute="centerX" id="vi3-c1-u8z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BgW-0o-dVY"/>
+                    <connections>
+                        <outlet property="agregarButton" destination="P4S-Yz-WM2" id="aNd-GW-ihx"/>
+                        <outlet property="grabarButtton" destination="g2y-ZE-PpE" id="hIA-8c-IPE"/>
+                        <outlet property="nombreTextField" destination="uXf-XN-DMP" id="Zxz-cM-fSV"/>
+                        <outlet property="reproducitButton" destination="HkJ-RY-Hk8" id="1QB-Ut-8BR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="78v-OT-9zL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763.7681159420292" y="67.633928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ocy-Ju-qc8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YLx-51-PlT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="axC-T8-m88">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ffJ-hn-aeg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nne-4P-CTo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="67.633928571428569"/>
         </scene>
     </scenes>
     <resources>
+        <image name="microfono" width="512" height="512"/>
+        <image name="music" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

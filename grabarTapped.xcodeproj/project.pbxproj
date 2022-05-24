@@ -17,6 +17,7 @@
 		D84C0E26283836B9002C8CDB /* grabarTappedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84C0E25283836B9002C8CDB /* grabarTappedTests.swift */; };
 		D84C0E30283836BA002C8CDB /* grabarTappedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84C0E2F283836BA002C8CDB /* grabarTappedUITests.swift */; };
 		D84C0E32283836BA002C8CDB /* grabarTappedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84C0E31283836BA002C8CDB /* grabarTappedUITestsLaunchTests.swift */; };
+		D84C0E3F283899BD002C8CDB /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84C0E3E283899BD002C8CDB /* SoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D84C0E2B283836BA002C8CDB /* grabarTappedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grabarTappedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84C0E2F283836BA002C8CDB /* grabarTappedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grabarTappedUITests.swift; sourceTree = "<group>"; };
 		D84C0E31283836BA002C8CDB /* grabarTappedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grabarTappedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D84C0E3E283899BD002C8CDB /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				D84C0E19283836B9002C8CDB /* LaunchScreen.storyboard */,
 				D84C0E1C283836B9002C8CDB /* Info.plist */,
 				D84C0E14283836B5002C8CDB /* grabarTapped.xcdatamodeld */,
+				D84C0E3E283899BD002C8CDB /* SoundViewController.swift */,
 			);
 			path = grabarTapped;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				D84C0E0C283836B5002C8CDB /* AppDelegate.swift in Sources */,
 				D84C0E16283836B5002C8CDB /* grabarTapped.xcdatamodeld in Sources */,
 				D84C0E0E283836B5002C8CDB /* SceneDelegate.swift in Sources */,
+				D84C0E3F283899BD002C8CDB /* SoundViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
